@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29025.244
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarroAPI", "CarroAPI\CarroAPI.csproj", "{8CACF3BE-95C9-4F4D-8DE7-3695B2661383}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarroAPI", "CarroAPI\CarroAPI.csproj", "{8CACF3BE-95C9-4F4D-8DE7-3695B2661383}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarroAPI.Domain", "CarroAPI.Domain\CarroAPI.Domain.csproj", "{31996C94-C356-48A1-8228-768094E228E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarroAPI.Domain", "CarroAPI.Domain\CarroAPI.Domain.csproj", "{31996C94-C356-48A1-8228-768094E228E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarroAPI.Repository", "CarroAPI.Repository\CarroAPI.Repository.csproj", "{E83A46EA-EC6C-43EF-B56F-340B34E2FC35}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarroAPI.Repository", "CarroAPI.Repository\CarroAPI.Repository.csproj", "{E83A46EA-EC6C-43EF-B56F-340B34E2FC35}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarroAPI.Services", "CarroAPI.Services\CarroAPI.Services.csproj", "{05979CB2-9458-4E48-8F75-B03585B7325E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarroAPI.Services", "CarroAPI.Services\CarroAPI.Services.csproj", "{05979CB2-9458-4E48-8F75-B03585B7325E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarroAPI.Business", "CarroAPI.Business\CarroAPI.Business.csproj", "{2E4ECFD1-BF7F-4AD3-8599-CA6A9117E597}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{05979CB2-9458-4E48-8F75-B03585B7325E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05979CB2-9458-4E48-8F75-B03585B7325E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05979CB2-9458-4E48-8F75-B03585B7325E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E4ECFD1-BF7F-4AD3-8599-CA6A9117E597}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E4ECFD1-BF7F-4AD3-8599-CA6A9117E597}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E4ECFD1-BF7F-4AD3-8599-CA6A9117E597}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E4ECFD1-BF7F-4AD3-8599-CA6A9117E597}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

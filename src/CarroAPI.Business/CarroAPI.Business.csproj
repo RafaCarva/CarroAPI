@@ -5,7 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CarroAPI.Business\CarroAPI.Business.csproj" />
     <ProjectReference Include="..\CarroAPI.Domain\CarroAPI.Domain.csproj" />
     <ProjectReference Include="..\CarroAPI.Repository\CarroAPI.Repository.csproj" />
   </ItemGroup>

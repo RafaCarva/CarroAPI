@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CarroAPI.Business;
+using CarroAPI.Domain;
+using CarroAPI.Repository;
+using CarroAPI.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -21,13 +25,19 @@ namespace CarroAPI
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            DependencyInjection(services);
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        public void DependencyInjection(IServiceCollection services)
+        {
+            services.AddSingleton<IRepository<Carro>, CarroRepository>();
+            services.AddTransient<ICarroBusiness, CarroBusiness>();
+            services.AddTransient<ICarroServices, CarroServices>();
+        }
+
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             if (env.IsDevelopment())
