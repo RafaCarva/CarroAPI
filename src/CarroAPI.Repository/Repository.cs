@@ -14,6 +14,7 @@ namespace WebStoreAPI.Repository
     public abstract class Repository<T> : IRepository<T> where T : CarroAPI.Domain.IEntity
     {
         private readonly ILogger<Repository<T>> _logger;
+
         public Repository(ILogger<Repository<T>> logger)
         {
             _logger = logger;

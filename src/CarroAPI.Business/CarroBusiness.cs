@@ -1,33 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
+using CarroAPI.Business.Interfaces;
 using CarroAPI.Domain;
 using CarroAPI.Repository;
+using CarroAPI.Repository.Interfaces;
 
 namespace CarroAPI.Business
 {
     public class CarroBusiness : ICarroBusiness
     {
 
-        private readonly IRepository<Carro> _carroRepository;
+        private readonly ICarroRepository _carroRepository;
 
-        public CarroBusiness(IRepository<Carro> carroRepository)
+        public CarroBusiness(ICarroRepository carroRepository)
         {
             _carroRepository = carroRepository;
         }
 
-        public void Add(Carro carro)
+        public List<Carro> ListAllCarros()
         {
-            _carroRepository.Add(carro);
-        }
-
-        public Carro FindByKey(Guid key)
-        {
-            return _carroRepository.FindByKey(key);
-        }
-
-        public List<Carro> List()
-        {
-            return _carroRepository.List();
+            return _carroRepository.ListAllCarros();
         }
     }
 }

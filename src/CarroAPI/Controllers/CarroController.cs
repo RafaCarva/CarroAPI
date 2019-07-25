@@ -28,8 +28,8 @@ namespace CarroAPI.Controllers
         {
             try
             {
-                _logger.LogInformation("Received get request");
-                return Ok(_carroServices.List());
+                _logger.LogInformation("**LOG** Received get request");
+                return Ok(_carroServices.ListAllCarros());
             }
             catch(Exception exception)
             {
@@ -38,12 +38,13 @@ namespace CarroAPI.Controllers
             }
         }
 
+        /*
         [HttpGet("{Key}")]
         public ActionResult<Carro> Get([FromRoute] Guid key)
         {
             try
             {
-                _logger.LogInformation("Received get request");
+                _logger.LogInformation("**LOG** Received get request");
                 return Ok(_carroServices.FindByKey(key));
             }
             catch (Exception exception)
@@ -58,11 +59,11 @@ namespace CarroAPI.Controllers
         {
             try
             {
-                _logger.LogInformation("Received post request");
+                _logger.LogInformation("**LOG** Received post request");
                 if (ModelState.IsValid)
                 {
                     _carroServices.Add(carro);
-                    return Ok("success");
+                    return Ok("**LOG** success");
                 }
                 else
                 {
@@ -75,5 +76,6 @@ namespace CarroAPI.Controllers
                 return new StatusCodeResult(500);
             }
         }
+        */
     }
 }

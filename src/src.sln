@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarroAPI.Services", "CarroA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarroAPI.Business", "CarroAPI.Business\CarroAPI.Business.csproj", "{2E4ECFD1-BF7F-4AD3-8599-CA6A9117E597}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarroAPI.Tests", "CarroAPI.Tests\CarroAPI.Tests.csproj", "{F4A90D9D-25F0-4622-A856-1C079FF5AAC2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{2E4ECFD1-BF7F-4AD3-8599-CA6A9117E597}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E4ECFD1-BF7F-4AD3-8599-CA6A9117E597}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E4ECFD1-BF7F-4AD3-8599-CA6A9117E597}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4A90D9D-25F0-4622-A856-1C079FF5AAC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4A90D9D-25F0-4622-A856-1C079FF5AAC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4A90D9D-25F0-4622-A856-1C079FF5AAC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4A90D9D-25F0-4622-A856-1C079FF5AAC2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

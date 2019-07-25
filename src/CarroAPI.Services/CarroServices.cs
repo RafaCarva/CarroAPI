@@ -1,4 +1,5 @@
 ﻿using CarroAPI.Business;
+using CarroAPI.Business.Interfaces;
 using CarroAPI.Domain;
 using CarroAPI.Repository;
 using System;
@@ -15,19 +16,9 @@ namespace CarroAPI.Services
             _carroBusiness = carroBusiness;
         }
 
-        public List<Carro> List()
+        public IEnumerable<Carro> ListAllCarros()
         {
-            return _carroBusiness.List();
-        }
-
-        public void Add(Carro carro)
-        {
-            _carroBusiness.Add(carro);
-        }
-
-        public Carro FindByKey(Guid key)
-        {
-            return _carroBusiness.FindByKey(key);
+            return _carroBusiness.ListAllCarros();
         }
     }
 }

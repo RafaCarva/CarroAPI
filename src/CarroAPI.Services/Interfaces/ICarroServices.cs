@@ -7,10 +7,6 @@ namespace CarroAPI.Services
 {
     public interface ICarroServices
     {
-        Carro FindByKey(Guid key);
-
-        List<Carro> List();
-
-        void Add(Carro carro);
+        IEnumerable<Carro> ListAllCarros();
     }
 }
