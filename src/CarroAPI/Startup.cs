@@ -6,6 +6,7 @@ using CarroAPI.Business;
 using CarroAPI.Business.Interfaces;
 using CarroAPI.Domain;
 using CarroAPI.Repository;
+using CarroAPI.Repository.Interfaces;
 using CarroAPI.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -34,7 +35,7 @@ namespace CarroAPI
 
         public void DependencyInjection(IServiceCollection services)
         {
-            services.AddSingleton<IRepository<Carro>, CarroRepository>();
+            services.AddSingleton<ICarroRepository, CarroRepository>();
             services.AddTransient<ICarroBusiness, CarroBusiness>();
             services.AddTransient<ICarroServices, CarroServices>();
         }

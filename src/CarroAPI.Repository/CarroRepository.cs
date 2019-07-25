@@ -4,7 +4,7 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using WebStoreAPI.Repository;
+using CarroAPI.Repository;
 
 namespace CarroAPI.Repository
 {
@@ -20,9 +20,8 @@ namespace CarroAPI.Repository
 
         public List<Carro> ListAllCarros()
         {
-            var query = "select * from produto";
+            var query = "select * from Carro";
             return this.Query(query).ToList();
         }
-
     }
 }

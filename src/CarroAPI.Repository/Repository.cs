@@ -9,7 +9,7 @@ using Microsoft.Extensions.Logging;
 using CarroAPI.Repository;
 using CarroAPI.Domain;
 
-namespace WebStoreAPI.Repository
+namespace CarroAPI.Repository
 {
     public abstract class Repository<T> : IRepository<T> where T : CarroAPI.Domain.IEntity
     {
