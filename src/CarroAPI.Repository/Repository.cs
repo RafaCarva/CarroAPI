@@ -20,20 +20,6 @@ namespace CarroAPI.Repository
             _logger = logger;
         }
 
-        public void Add(T obj)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Carro FindByKey(Guid key)
-        {
-            throw new NotImplementedException();
-        }
-
-        public List<T> List()
-        {
-            throw new NotImplementedException();
-        }
 
         public IEnumerable<T> Query(string query)
         {
